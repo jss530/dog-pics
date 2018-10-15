@@ -1,0 +1,19 @@
+ul {
+  width: 150px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+video {
+  width: 150px;
+  height: 150px;
+}

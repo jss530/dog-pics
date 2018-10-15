@@ -1,0 +1,23 @@
+{
+  "name": "dog-pics",
+  "version": "1.0.0",
+  "description": "Random Dog Pics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jss530/dog-pics.git"
+  },
+  "author": "Jacqlene Sifre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jss530/dog-pics/issues"
+  },
+  "homepage": "https://github.com/jss530/dog-pics#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
