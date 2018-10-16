@@ -1,5 +1,4 @@
-const DOG_API_URL = 'https://dog.ceo/api/breeds/image/random';
-const CAT_API_URL = 'https://aws.random.cat/meow';
+const DOG_API_URL = 'https://dog.ceo/api/breeds/image/random/50';
 
 function get(url) {
   return new Promise(function(resolve, reject) {
@@ -39,20 +38,12 @@ function loadMore() {
   .then(function(dogResponse) {
   	let dogResp = JSON.parse(dogResponse);
 
-    loadImage(dogResp.message);
+    for (let img of dogResp.message) {
+      loadImage(img);
+    }
+
     console.log("Success for dogs!");
   }, function(error) {
     console.error("Failed!", error);
   })
-  .then(get(CAT_API_URL)
-  .then(function(catResponse) {
-		  	let catResp = JSON.parse(catResponse);
-		debugger;
-    loadImage(catResp.file);
-    console.log("Success for cats!");
-   }, function(error) {
-  console.error("Failed!", error);
-   })
-  )
-
 }
