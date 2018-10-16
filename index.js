@@ -30,7 +30,7 @@ function loadImage(url) {
   li.setAttribute('class', 'dog-pic');
   img.setAttribute('src', url);
   img.setAttribute('class', 'img-thumbnail img-responsive');
-  img.setAttribute('onClick', 'loadImage(img)');
+  img.setAttribute('onClick', 'enlarge(this)');
 }
 
 function loadMore() {
@@ -49,7 +49,7 @@ function loadMore() {
   })
 }
 
-function loadImage(img) {
+function enlarge(img) {
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById("img01");
   const span = document.getElementsByClassName("close")[0];
