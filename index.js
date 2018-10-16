@@ -27,11 +27,10 @@ function loadImage(url) {
 
   list.appendChild(li);
   li.appendChild(img);
+  li.setAttribute('class', 'dog-pic');
   img.setAttribute('src', url);
   img.setAttribute('class', 'img-thumbnail img-responsive');
-
 }
-
 
 function loadMore() {
 
@@ -47,4 +46,20 @@ function loadMore() {
   }, function(error) {
     console.error("Failed!", error);
   })
+}
+
+var modal = document.getElementById('imageModal');
+var img = document.getElementsByClassName('img-thumbnail');
+var modalImg = document.getElementById("img01");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
 }
