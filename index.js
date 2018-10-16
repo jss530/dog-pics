@@ -29,7 +29,7 @@ function loadImage(url) {
   li.appendChild(img);
   li.setAttribute('class', 'dog-pic');
   img.setAttribute('src', url);
-  img.setAttribute('class', 'img-thumbnail img-responsive');
+  img.setAttribute('class', 'img-thumbnail img-responsive img-circle pet');
   img.setAttribute('onClick', 'enlarge(this)');
 }
 
@@ -60,6 +60,12 @@ function enlarge(img) {
   span.onclick = function() {
     modal.style.display = "none";
   }
-
-
 }
+
+$('#pets').twbsPagination({
+  totalPages: 5,
+  visiblePages: 10,
+  onPageClick: function (event, page) {
+    $('#page-content').text('Page ' + page);
+  }
+});

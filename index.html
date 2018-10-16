@@ -18,17 +18,20 @@
     </nav>
 
     <div class="row">
-      <ul class="col-sm-3" id="pets">
-        <li>
-          <img src="https://random.dog/9033ba8f-357f-4912-be0f-e30ae94ee560.png" class="img-thumbnail img-responsive"
-          onClick=enlarge(this)>
-         </li>
-      </ul>
+      <div>
+        <ul class="col-sm-3" id="pets">
+          <li>
+            <img src="https://random.dog/9033ba8f-357f-4912-be0f-e30ae94ee560.png" class="img-thumbnail img-responsive img-circle pet"
+            onClick=enlarge(this)>
+           </li>
+        </ul>
+      </div>
 
       <div class="col-sm-9">
         <div class="jumbotron">
           <h1>Welcome to Unleashed!</h1>
           <p>Click on any picture to enlarge.</p>
+          <p>Click 'Show me more dogs!' to get more pics!</p>
         </div>
       </div>
     </div>
@@ -39,7 +42,7 @@
       <img class="modal-content">
     </div>
 
-    <button onClick=loadMore()>
+    <button type="button" class="btn btn-primary btn-lg" onClick=loadMore()>
       Show me more dogs!
     </button>
 
