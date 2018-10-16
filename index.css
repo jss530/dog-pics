@@ -1,6 +1,23 @@
-ul {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+#header {
+  font-size: 56px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+ul #pets{
   width: 150px;
   margin: 0 auto;
+}
+
+.container {
+  float: right;
 }
 
 li {
@@ -8,12 +25,7 @@ li {
   margin-bottom: 10px;
 }
 
-img {
-  width: 150px;
-  height: 150px;
-}
-
-video {
-  width: 150px;
-  height: 150px;
-}
+/* img {
+  width: 200px;
+  height: 200px;
+} */

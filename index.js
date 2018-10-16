@@ -28,6 +28,7 @@ function loadImage(url) {
   list.appendChild(li);
   li.appendChild(img);
   img.setAttribute('src', url);
+  img.setAttribute('class', 'img-thumbnail img-responsive');
 
 }
 

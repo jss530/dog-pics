@@ -5,14 +5,40 @@
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <ul id="pets">
-      <li>
-        <img src="https://random.dog/9033ba8f-357f-4912-be0f-e30ae94ee560.png" >
-       </li>
-    </ul>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <ul class="col-sm-3" id="pets">
+        <li>
+          <img src="https://random.dog/9033ba8f-357f-4912-be0f-e30ae94ee560.png" class="img-thumbnail img-responsive">
+         </li>
+      </ul>
+
+      <div class="col-sm-9">
+        <div class="jumbotron">
+          <h1>Bootstrap Tutorial</h1>
+          <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+          responsive, mobile-first projects on the web.</p>
+        </div>
+        <p>This is some text.</p>
+        <p>This is another text.</p>
+      </div>
+    </div>
+
     <button onClick=loadMore()>
-      Load more
+      Show me the dogs!
     </button>
+
     <script src="index.js"></script>
     <script src="bundle.js"></script>
   </body>
