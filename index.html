@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-  <body>
+  <body onLoad=loadMore()>
 
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -18,13 +18,11 @@
     </nav>
 
     <div class="row">
-      <div>
-        <ul class="col-sm-3" id="pets">
-          <li>
-            <img src="https://random.dog/9033ba8f-357f-4912-be0f-e30ae94ee560.png" class="img-thumbnail img-responsive img-circle pet"
-            onClick=enlarge(this)>
-           </li>
+      <div id="pets-list">
+        <ul class="col-sm-3 list" id="pets">
+
         </ul>
+        <ul class="pagination"></ul>
       </div>
 
       <div class="col-sm-9">
@@ -42,11 +40,9 @@
       <img class="modal-content">
     </div>
 
-    <button type="button" class="btn btn-primary btn-lg" onClick=loadMore()>
-      Show me more dogs!
-    </button>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="index.js"></script>
     <script src="bundle.js"></script>
+
   </body>
 </html>

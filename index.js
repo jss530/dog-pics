@@ -46,6 +46,15 @@ function loadMore() {
     console.log("Success for dogs!");
   }, function(error) {
     console.error("Failed!", error);
+  }).then(function() {
+      debugger;
+    const options = {
+      valueNames: [ 'dog-pic' ],
+      page: 3,
+      pagination: true
+    };
+
+    const listObj = new List('pets', options);
   })
 }
 
@@ -61,11 +70,3 @@ function enlarge(img) {
     modal.style.display = "none";
   }
 }
-
-$('#pets').twbsPagination({
-  totalPages: 5,
-  visiblePages: 10,
-  onPageClick: function (event, page) {
-    $('#page-content').text('Page ' + page);
-  }
-});
