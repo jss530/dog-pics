@@ -49,6 +49,8 @@ function loadMore() {
   }).then(function() {
     const petsList = new List('pets-list', {
       valueNames: ['dog-pic'],
+      innerWindow: 5,
+      outerWindow: 5,
       page: 10,
       pagination: true
       });

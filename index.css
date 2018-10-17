@@ -36,13 +36,50 @@ ul .list {
 .pagination {
   margin: 5px 0px 5px 40px;
   position: relative;
+}
+
+.pagination li a {
   color: black;
+}
+
+.pagination .active a {
+  background-color: black;
+  border-color: black;
+}
+
+.pagination .active a:hover {
+  background-color: #DCDCDC;
+  border-color: black;
+  color: white;
+}
+
+.pagination .active a:focus {
+  background-color: #DCDCDC;
+  border-color: black;
+  color: white;
+}
+
+
+.pagination li a:before {
+  background-color: #DCDCDC;
+  color: white;
+}
+
+.pagination li a:after {
+  background-color: #DCDCDC;
+  color: white;
 }
 
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
 }
+
+.no-gutter > [class*='row'] {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 
 li {
   list-style: none;
