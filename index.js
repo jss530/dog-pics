@@ -47,15 +47,12 @@ function loadMore() {
   }, function(error) {
     console.error("Failed!", error);
   }).then(function() {
-      debugger;
-    const options = {
-      valueNames: [ 'dog-pic' ],
-      page: 3,
+    const petsList = new List('pets-list', {
+      valueNames: ['dog-pic'],
+      page: 10,
       pagination: true
-    };
-
-    const listObj = new List('pets', options);
-  })
+      });
+    });
 }
 
 function enlarge(img) {
