@@ -27,9 +27,9 @@ function loadImage(url) {
 
   list.appendChild(li);
   li.appendChild(img);
-  li.setAttribute('class', 'dog-pic');
+  li.setAttribute('class', 'dog-pic no-gutter');
   img.setAttribute('src', url);
-  img.setAttribute('class', 'img-thumbnail img-responsive img-circle');
+  img.setAttribute('class', 'col-sm-3');
   img.setAttribute('onClick', 'enlarge(this)');
 }
 
