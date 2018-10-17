@@ -29,7 +29,7 @@ function loadImage(url) {
   li.appendChild(img);
   li.setAttribute('class', 'dog-pic');
   img.setAttribute('src', url);
-  img.setAttribute('class', 'img-thumbnail img-responsive img-circle pet');
+  img.setAttribute('class', 'img-thumbnail img-responsive img-circle');
   img.setAttribute('onClick', 'enlarge(this)');
 }
 
