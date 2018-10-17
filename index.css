@@ -24,6 +24,7 @@ ul .list {
 .pagination {
   margin: 5px 0px 5px 40px;
   position: relative;
+  color: black;
 }
 
 .no-gutter > [class*='col-'] {
@@ -67,6 +68,7 @@ img:hover {opacity: 0.7;}
     margin: auto;
     display: block;
     width: 80%;
+    height: 80%;
     max-width: 700px;
 }
 
